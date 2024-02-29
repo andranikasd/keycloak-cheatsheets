@@ -98,5 +98,4 @@ This project is open source and contributions are welcome. Please submit issues 
 
 ## License
 
-This guide and accompanying configurations are provided under the MIT License.
-
+This guide and accompanying configurations are provided under the GNU General Public License (GPL). For more details, see the LICENSE file in the project repository.
