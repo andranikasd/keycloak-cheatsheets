@@ -92,6 +92,11 @@ To verify the integration:
 - Verify the `clientSecret` is correctly base64 encoded and matches the secret configured in Keycloak.
 - Check network connectivity between ArgoCD and Keycloak.
 
+## Other Resources
+
+- [**Terraform ArgoCD-Realm Keycloak Module Example**](terraform/README.md) - Step-by-step instructions on creating Terraform module for Keycloak-Realm (For ArgoCD)
+
+
 ## Contributing
 
 This project is open source and contributions are welcome. Please submit issues or pull requests on our GitHub repository.
