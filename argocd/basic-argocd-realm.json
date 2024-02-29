@@ -1,0 +1,41 @@
+{
+    "realm": "argocd",
+    "enabled": true,
+    "sslRequired": "external",
+    "groups": [
+      {
+        "name": "ArgoCDAdmins",
+        "path": "/",
+        "attributes": {}
+      }
+    ],
+    "clients": [
+      {
+        "clientId": "argocd",
+        "directAccessGrantsEnabled": true,
+        "redirectUris": ["https://<argocd-uri>/auth/callback"],
+        "publicClient": false,
+        "protocol": "openid-connect",
+        "attributes": {
+          "access.token.lifespan": "900"
+        },
+        "secret": "secret"
+      }
+    ],
+    "users": [
+      {
+        "username": "admin",
+        "enabled": true,
+        "credentials": [
+          {
+            "type": "password",
+            "value": "admin-password"
+          }
+        ],
+        "realmRoles": ["offline_access", "uma_authorization"],
+        "clientRoles": {
+          "realm-management": ["manage-users", "view-users"]
+        }
+      }
+    ]
+  }
