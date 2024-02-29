@@ -60,6 +60,7 @@ module "argocd_keycloak" {
   argocd_client_secret      = "your-client-secret"
   argocd_redirect_uris      = ["https://your-argocd-server/auth/callback"]
 }
+```
 
 Replace the placeholder values with your actual Keycloak server URL, admin credentials, client secret, and ArgoCD redirect URI. Then, initialize Terraform with terraform init and apply the configuration with `terraform apply`.
 
